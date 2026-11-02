@@ -1,7 +1,11 @@
 {
-  "name": "koishi-plugin-glot",
-  "description": "Execute Code in [glot.io](https://glot.io)",
-  "version": "1.1.6",
+  "name": "@defaultuser233/koishi-plugin-glot",
+  "description": "Execute Code in [glot.io](https://glot.io) (maintained fork using the new /api/mux endpoint)",
+  "version": "1.2.0",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
   "files": [
@@ -11,25 +15,26 @@
   "author": "Anillc <void@anillc.cn>",
   "contributors": [
     "Anillc <void@anillc.cn>",
-    "Shigma <shigma10826@gmail.com>"
+    "Shigma <shigma10826@gmail.com>",
+    "defaultuser233"
   ],
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/koishijs/koishi-plugin-glot.git"
+    "url": "git+https://github.com/defaultuser233/koishi-plugin-glot.git"
   },
   "bugs": {
-    "url": "https://github.com/koishijs/koishi-plugin-glot/issues"
+    "url": "https://github.com/defaultuser233/koishi-plugin-glot/issues"
   },
-  "homepage": "https://github.com/koishijs/koishi-plugin-glot",
+  "homepage": "https://github.com/defaultuser233/koishi-plugin-glot",
   "scripts": {
     "build": "atsc -b"
   },
   "koishi": {
     "browser": true,
     "description": {
-      "en": "Execute Code in [glot.io](https://glot.io)",
-      "zh": "使用 [glot.io](https://glot.io) 执行代码"
+      "en": "Execute Code in [glot.io](https://glot.io) (new /api/mux endpoint)",
+      "zh": "使用 [glot.io](https://glot.io) 执行代码（新 /api/mux 接口）"
     }
   },
   "keywords": [
@@ -50,6 +55,6 @@
     "@types/node": "^18.14.0",
     "atsc": "^1.2.2",
     "koishi": "^4.17.3",
-    "typescript": "^4.9.5"
+    "typescript": "^5.9.3"
   }
 }
